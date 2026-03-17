@@ -1,7 +1,7 @@
 EXECUTE admindb.[dbo].[DatabaseBackup]
 @Databases = 'Northwind',
 @Directory = 'C:\_SQLbackup',          -- Dein Backup-Pfad (idealerweise ein Share)
-@BackupType = 'FULL',              -- 'FULL', 'DIFF', oder 'LOG'
+@BackupType = 'LOG',              -- 'FULL', 'DIFF', oder 'LOG'
 @Verify = 'Y',                     -- Wichtig: Backup nach dem Schreiben prüfen
 @Compress = 'Y',                   -- Kompression spart Platz und I/O
 @CheckSum = 'Y',                   -- Integritätsprüfung während des Backups
